@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/homepagestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>OctoThaiParts</title>
+</head>
+
+<body>
+    <div class="Header">
+        <div class="Leftside-header">
+
+            <div class="Logo-container">
+                <img class="Logo" src="../Assets/octo2024.png" alt="octo2024logo">
+            </div>
+
+            <div class="Dashboard-text"><h1>Dashboard</h1></div>
+
+        </div>
+
+        <div class="Middle-header">
+                <input class="Search-bar" id="Search-bar" type="text" placeholder="Search">
+            <button class="Search-button">
+               <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="Rightside-header">
+
+            <button class="Inbox-button">
+                <i class="fa-solid fa-inbox"></i>
+             </button>
+             
+            <button class="Notification-button">
+                <i class="fa-regular fa-bell"></i>
+             </button>
+
+             <div class="Acc-icon">
+                 <img class="Acc-img" src="../Assets/Accpic.jpg" alt="Accpic">
+             </div>
+
+            <div class="Acc-Name">
+                <label for="Account">Angelo Apdua</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="Sidebar">
+        <div class="Sidebar-homepage">
+           <div class="Sidebar-icon"><i class="fa-solid fa-house"></i></div>
+            <div class="Icon-text">Dashboard</div>
+        </div>
+        <div class="Sidebar-link">
+            <div class="Sidebar-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+            <div class="Icon-text">Product</div>
+        </div>
+        <div class="Sidebar-link">
+            <div class="Sidebar-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="Icon-text"><a class="Orderbtn" href="show.php">Orders</a></div>
+        </div>
+        <div class="Sidebar-link">
+            <div class="Sidebar-icon"><i class="fa-solid fa-user-group"></i></div>
+            <div class="Icon-text">Customer</div>
+        </div>
+        <div class="Sidebar-link">
+            <div class="Sidebar-icon"><i class="fa-solid fa-file"></i></div>
+            <div class="Icon-text">Report</div>
+        </div>
+        <div class="Sidebar-line">
+            __________________________
+        </div>
+        <div class="Sidebar-link">
+            <div class="Sidebar-icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="Icon-text">Settings</div>
+        </div>
+        <div class="Sidebar-link">
+            <div class="Sidebar-icon"><i class="fa-solid fa-circle-info"></i></div>
+            <div class="Icon-text">Help</div>
+        </div>
+        <div class="Sidebar-link">
+            <div class="Sidebar-icon"><i class="fa-solid fa-right-from-bracket"></i></div>
+            <div class="Icon-text"><a class="Orderbtn" href="../Users/logout.php">Log out</a></div>
+        </div>
+    </div>
+
+    <div class="Order-form">
+       <div class="Orderform-title"> 
+            <h1>OctoThaiParts</h1>
+            <h2>Order Form</h2>
+        </div>   
+
+        <form action="../Orders/order.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="parts">Parts Type:</label>
+            <select id="parts" name="parts">
+                <option value="Tire">Tire - ₱950</option>
+                <option value="Rims">Rims - ₱1300</option>
+                <option value="Mags">Mags - ₱5350</option>
+                <option value="Seat">Seat - ₱2200</option>
+                <option value="Suspension">Suspension - ₱3400</option>
+            </select>
+
+            <div class="input-group">
+                <label>Size:</label>
+                <input type="radio" id="17's" name="size" value="17's">
+                <label for="small">17's</label>
+
+                <input type="radio" id="14's" name="size" value="14's">
+                <label for="medium">14's</label>
+
+                <input type="radio" id="21's" name="size" value="21's">
+                <label for="large">21's</label>
+            </div>
+
+            <label for="instructions">Special Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="4"></textarea>
+
+            <button type="submit">Place Order</button>
+
+        </form>
+        <form action="retrieve.html">
+            <button type="submit">Retrieve Order</button>
+        </form>
+    </div>
+</body>
+</html>

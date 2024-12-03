@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octo ThaiParts</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ThaiParts Order</h1>
+        <form method="POST" action="../orders/update.php">
+            <label for="order_id">Order ID:</label>
+            <input type="text" id="order_id" name="order_id" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="parts">Parts Type:</label>
+            <select id="parts" name="parts">
+                <option value="Tire">Tire - ₱950</option>
+                <option value="Rims">Rims - ₱1300</option>
+                <option value="Mags">Mags - ₱5350</option>
+                <option value="Seat">Seat - ₱2200</option>
+                <option value="Suspension">Suspension - ₱3400</option>
+            </select>
+
+            <div class="input-group">
+                <label>Size:</label>
+                <input type="radio" id="17's" name="size" value="17's">
+                <label for="small">17's</label>
+
+                <input type="radio" id="14's" name="size" value="14's">
+                <label for="medium">14's</label>
+
+                <input type="radio" id="21's" name="size" value="21's">
+                <label for="large">21's</label>
+            </div>
+
+            <label for="instructions">Special Instructions:</label>
+            <textarea id="instructions" name="instructions"></textarea>
+
+            <button type="submit">Update Order</button>
+        </form>
+
+        <br />
+
+        <form action="show.php">
+            <button type="submit">Back</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

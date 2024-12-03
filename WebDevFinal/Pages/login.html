@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OctoThaiParts</title>
+    <link rel="stylesheet" href="../css/loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+
+<body>
+
+   <div class="Logo-container"> 
+    <img class="Logo" src="../Assets/octo2024.png" alt="OctoThaiParts Logo">
+   </div>   
+
+   <div class="container" id="signup">
+    <h1 class="form-title">Sign In</h1>
+    <form action="../users/login.php" method="POST">
+
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="email">Email</label>
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <label for="password">Password</label>
+        </div>
+
+        <p class="recover">
+            <a href="#">Recover Password</a>
+        </p>
+        <input type="submit" class="button" value="Log In" name="login">
+    </form>
+
+    <div class="links">
+        <p>Don't have account yet?</p>
+        <button id="signUpButton"> <a href="register.html">Sign Up</a></button>
+    </div>
+  </div> 
+</body>
+
+</html>
