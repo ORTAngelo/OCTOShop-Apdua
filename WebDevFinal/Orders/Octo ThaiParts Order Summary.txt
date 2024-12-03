@@ -1,0 +1,9 @@
+Order Summary
+-----------------
+Name: joy
+Parts Type: Rims (₱1,300.00)
+Size: 17's
+Total Price: ₱1,300.00
+Special Instructions: install
+
+Thank you for your order!
